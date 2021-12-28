@@ -17,6 +17,7 @@ const persistConfig = {
    
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 
+//Check added to enable/disable redux  tool as per environment
 export const persistedStore = createStore(persistedReducer, process.env.REACT_APP_STAG_ENV.toLowerCase() != 'production' ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : [])
 export const persistor = persistStore(persistedStore)
 
