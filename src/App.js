@@ -4,7 +4,6 @@ import Products from "./Pages/Products";
 import MainNavigation from "./Components/Layout/MainNavigation";
 
 function App() {
- console.log(process.env)
   return (
     <div>
       <MainNavigation />
